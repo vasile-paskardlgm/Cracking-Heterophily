@@ -4,4 +4,4 @@ The supplementary materials for the paper: Cracking Heterophily in Coarsening-Ba
 You can find something essential here:  
 
 - Source code for model implementation in the `src` folder
-- Complete manuscript with techinical appendix `ISIT2025_CTH_Coarsening_for_heterophily_.pdf`
+- Complete manuscript with techinical appendix: `ISIT2025_CTH_Coarsening_for_heterophily_.pdf`
