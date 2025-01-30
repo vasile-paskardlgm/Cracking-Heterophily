@@ -1,1 +1,0 @@
-## source code for model implementation of our CTH method.
