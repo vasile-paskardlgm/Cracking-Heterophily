@@ -4,7 +4,7 @@
 - Please ensure that your GPU has adequate memory. Our experiments were conducted using two NVIDIA A100 GPUs, each with 80GB of memory. If your system does not meet this requirement, you may utilize the CPU mode we provide as an alternative (see the **Usage** section in the following).
 - The demo code currently provides *GCN* as the backbone. However, `network.py` is designed for easy customization, allowing you to incorporate any GNN of your choice.
 
-### Usage
+## Usage
 
 CTH consists of two key steps: *1) Similarity-guided coarsening* and *2) Residual-reintegrated training*, which are implemented in two Python files:
 
