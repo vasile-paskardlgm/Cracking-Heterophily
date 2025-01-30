@@ -14,6 +14,9 @@ CTH consists of two key steps: *1) Similarity-guided coarsening* and *2) Residua
 Therefore, to run CTH on the *Gamers* dataset with a *GCN* backbone and a coarsening ratio of *0.1*, execute:
 
 > python preprocessing.py --dataset twitch-gamer --M 5 --coarsening_ratio 0.1 --gpu  
-> python main.py --dataset twitch-gamer --epochs 500 --early_stopping 50 --coarsening_ratio 0.1 --gpu
 
-If GPU memory is insufficient, simply remove `--gpu` to run on CPU.
+to generate preprocessed data. Then, run:
+
+> python main.py --dataset twitch-gamer --epochs 500 --early_stopping 50 --coarsening_ratio 0.1 --gpu  
+
+to train the GCN model with CTH. If GPU memory is insufficient, simply remove `--gpu` to run on CPU (could be significantly slower than GPU execution).
