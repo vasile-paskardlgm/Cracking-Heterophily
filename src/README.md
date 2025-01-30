@@ -8,8 +8,8 @@
 
 CTH consists of two key steps: *1) Similarity-guided coarsening* and *2) Residual-reintegrated training*, which are implemented in two Python files:
 
-- `preprocessing.py`: Downloads required raw data to the `data` folder, then generates augmented features and the coarsened graph, which would be stored in the `preprocessed` folder.
-- `main.py`: Performs GNN training using the CTH method.
+- `preprocessing.py`: Downloads required raw data to the `data` folder, then generates augmented features and the coarsened graph, which would be stored in the `preprocessed` folder. Folders will be automatically created (if raw data can be obtained from the repository above).
+- `main.py`: Performs GNN training using the CTH method. You must run `preprocessing.py` before calling the training stage.
 
 Therefore, to run CTH on the *Gamers* dataset with a *GCN* backbone and a coarsening ratio of *0.1*, execute:
 
