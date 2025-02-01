@@ -92,6 +92,7 @@ if __name__ == '__main__':
             OMEGA = torch.load(f'{PREPROCESSPATH}omega_{args.dataset}.pt')
             print("Augmented feature omega for "+args.dataset+" has been loaded")
 
+        dataset = load_nc_dataset(args.dataset)
         coarsened_data = similarity_coarsening(dataset, OMEGA, args.coarsening_ratio, device)
         torch.save(coarsened_data, f'{PREPROCESSPATH}{args.dataset}_{int(args.coarsening_ratio * 100)}percent.pt')
     
